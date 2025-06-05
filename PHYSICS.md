@@ -9,11 +9,11 @@ A lattice of atoms situated closely together exercise strong interference effect
 
 Choosing the same transition in the atoms qubitifies the lattice, and the following notation for ground and excited states in the lattice is adopted (referred to as natural basis or atomic basis):
 
-Ground state: $\ket{g} = \ket{g_0, g_1, \dots, g_{N-1}}$.
+Ground state: $|g\rangle = |g_0, g_1, \dots, g_{N-1}\rangle$.
 
-Singly excited state: $\ket{e_j} = \ket{g_0, \dots, g_{j-1}, e_j, g_{j+1}, \dots, g_{N-1}}$.
+Singly excited state: $|e_j\rangle = |g_0, \dots, g_{j-1}, e_j, g_{j+1}, \dots, g_{N-1}\rangle$.
 
-Doubly excited state: $\ket{e_j, e_k} = \ket{g_0, \dots, g_{j-1}, e_j, g_{j+1}, \dots, g_{k-1}, e_k, g_{k+1}, \dots, g_{N-1}}$.
+Doubly excited state: $|e_j, e_k\rangle = |g_0, \dots, g_{j-1}, e_j, g_{j+1}, \dots, g_{k-1}, e_k, g_{k+1}, \dots, g_{N-1}\rangle$.
 
 Where N is the number of atoms in the lattice, and the e/g denotes if the indexed qubit is in the excited or ground state. 
 
