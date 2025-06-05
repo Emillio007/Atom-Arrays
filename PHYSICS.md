@@ -19,13 +19,13 @@ Where N is the number of atoms in the lattice, and the e/g denotes if the indexe
 
 In the dipole approximation, the output field is a superposition of the input field (e.g. a driving field) and the scattered field from the dipoles. This scattering off of dipoles can be described by a Green's tensor of classical field mediation in 3D, the dipole moment matrix element (i.e. transition strength) and a qubit deexcitation operator:
 
-$$\mathbf{\mathbf{E}}_{out}(\mathbf{r}) = \mathbf{\mathbf{E}}_{in}(\mathbf{r}) + \mu_0 \omega_0^2 \sum_j \mathbf{G}(\mathbf{r}, \mathbf{r}_j, \omega_0) \mathbf{D}_j \mathbf{\sigma}_-^j$$.
+$$\mathbf{E}_{out}(\mathbf{r}) = \mathbf{E}_{in}(\mathbf{r}) + \mu_0 \omega_0^2 \sum_j \mathbf{G}(\mathbf{r}, \mathbf{r}_j, \omega_0) \mathbf{D}_j \mathbf{\sigma}_-^j$$.
 
 Where $\mu_0$ is the vacuum permittivity, $\omega_0$ is the transition frequency, $\mathbf{r}_j$ is the j'th qubit position, $\mathbf{D}_j$ is the j'th dipole moment matrix elements of transition in 3D and $\mathbf{\sigma}_-^j$ is the j'th qubit deexcitation operator.
 
 The i'th qubit can experience this outputted field, and the energy contribution of being excited from this field via dipole interaction gives the effective Hamiltonian: 
 
-$$\mathbf{H}_{eff} = \sum_i -\mathbf{\mathbf{p}}_i \mathbf{\mathbf{E}}_{out}(\mathbf{r}_i) = - \mu_0 \omega_0^2 \sum_{i,j} \mathbf{D}_i^\dagger \mathbf{G}(\mathbf{r}_i, \mathbf{r}_j, \omega_0) \mathbf{D}_j \mathbf{\sigma}_+^i \mathbf{\sigma}_-^j$$.
+$$\mathbf{H}_{eff} = \sum_i -\mathbf{p}_i \mathbf{E}_{out}(\mathbf{r}_i) = - \mu_0 \omega_0^2 \sum_{i,j} \mathbf{D}_i^\dagger \mathbf{G}(\mathbf{r}_i, \mathbf{r}_j, \omega_0) \mathbf{D}_j \mathbf{\sigma}_+^i \mathbf{\sigma}_-^j$$.
 
 In words, this is the energy contributions of the i'th qubit becoming excited from j'th qubit deexciting via dipole interactions with the i'th and j'th respective dipole moment matrix elements in the three spatial directions. The Hamiltonian is so called "effective", because it is not concerned with the complete system. The radiative modes, i.e. field modes tmathbf carry away the excitation from the lattice, are not included, which means every time-step, the probaility of exciting a such mode increases, and therefore the probability of still being excited decreases. This is reflected in the fact tmathbf the effective Hamiltonian is \textit{not} Hermitian. The Hamiltonian attains complex eigenvalues, where the imaginary value describes the eigenstate decay rate: 
 
